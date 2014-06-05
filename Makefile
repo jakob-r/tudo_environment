@@ -21,4 +21,10 @@ check:
 
 pull:
 	git pull
-	git pull --recurse-submodules
+	git pull --recursive-submodules
+
+update: pull
+	git submodule update --recursive
+	git commit -am "updated all submodules"
+	git push
+
