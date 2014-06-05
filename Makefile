@@ -21,7 +21,7 @@ check:
 
 pull:
 	git pull
-	git pull --recurse-submodules
+	git submodule foreach git pull origin master
 
 update: pull
 	git submodule update --recursive
