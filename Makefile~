@@ -19,7 +19,7 @@ check:
 	make check -C mlr
 	make check -C mlrMBO
 
-pull:
+update:
 	git pull
 	git pull --recurse-submodules
 	
