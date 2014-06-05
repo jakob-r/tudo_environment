@@ -11,8 +11,14 @@ cd tudo_enviroment
 make install
 ```
 
-update all
+fetch all newest versions
 ----------
 ```
 make pull
+```
+
+update all submodules to newest version, commit and push
+-----------
+```
+make update
 ```
