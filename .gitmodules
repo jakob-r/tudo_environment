@@ -1,0 +1,15 @@
+[submodule "mlr"]
+	path = mlr
+	url = git://github.com/berndbischl/mlr.git
+[submodule "BBmisc"]
+	path = BBmisc
+	url = git://github.com/berndbischl/BBmisc.git
+[submodule "ParamHelpers"]
+	path = ParamHelpers
+	url = git://github.com/berndbischl/ParamHelpers.git
+[submodule "mlrMBO"]
+	path = mlrMBO
+	url = git://github.com/berndbischl/mlrMBO.git
+[submodule "parallelMap"]
+	path = parallelMap
+	url = git://github.com/berndbischl/parallelMap.git
