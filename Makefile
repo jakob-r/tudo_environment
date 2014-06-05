@@ -21,7 +21,7 @@ check:
 
 pull:
 	git pull
-	git pull --recursive-submodules
+	git pull --recurse-submodules
 
 update: pull
 	git submodule update --recursive
