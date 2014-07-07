@@ -1,5 +1,6 @@
 install:
 	make install -C BBmisc
+	make install -C checkmate
 	make install -C ParamHelpers
 	make install -C parallelMap
 	make install -C mlr
@@ -7,6 +8,7 @@ install:
 
 test:
 	make test -C BBmisc
+	make test -C checkmate
 	make test -C ParamHelpers
 	make test -C parallelMap
 	make test -C mlr
@@ -14,6 +16,7 @@ test:
 
 check:
 	make check -C BBmisc
+	make check -C checkmate
 	make check -C ParamHelpers
 	make check -C parallelMap
 	make check -C mlr
