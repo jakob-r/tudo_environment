@@ -13,3 +13,6 @@
 [submodule "parallelMap"]
 	path = parallelMap
 	url = git://github.com/berndbischl/parallelMap.git
+[submodule "checkmate"]
+	path = checkmate
+	url = https://github.com/mllg/checkmate.git
