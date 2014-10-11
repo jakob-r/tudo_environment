@@ -27,12 +27,10 @@ coall:
 	git checkout -- .
 	git submodule foreach git checkout -- .
 
-pull:
-	coall
+pull: coall
 	git pull
 	git submodule foreach git pull origin master
 
-update:
-	pull
+update: pull
 	git commit -am "updated all submodules"
 	git push
