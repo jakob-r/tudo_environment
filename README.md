@@ -11,14 +11,17 @@ cd tudo_enviroment
 make install
 ```
 
-fetch all newest versions
-----------
+make commands
+-------------
+All `make` commands will call `checkout -- .` on each submodule and in the main git.
+This means: **All `make` commands will discard any uncommited changes**
+
+### fetch all newest versions
 ```
 make pull
 ```
 
-update all submodules to newest version, commit and push
------------
+### update all submodules to newest version, commit and push
 ```
 make update
 ```
