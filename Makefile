@@ -23,6 +23,7 @@ check:
 	make check -C mlrMBO
 
 pull:
+	git submodule foreach git checkout -- .
 	git pull
 	git submodule foreach git pull origin master
 
