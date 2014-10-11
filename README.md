@@ -21,7 +21,7 @@ This means: **All `make` commands will discard any uncommited changes**
 make pull
 ```
 
-### update all submodules to newest version, commit and push
+### pull all newest versions, commit and push
 ```
 make update
 ```
