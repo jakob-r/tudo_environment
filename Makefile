@@ -5,6 +5,7 @@ install:
 	make install -C parallelMap
 	make install -C mlr
 	make install -C mlrMBO
+	coall
 
 test:
 	make test -C BBmisc
@@ -22,13 +23,16 @@ check:
 	make check -C mlr
 	make check -C mlrMBO
 
-pull:
+coall:
+	git checkout -- .
 	git submodule foreach git checkout -- .
+
+pull:
+	coall
 	git pull
 	git submodule foreach git pull origin master
 
-update: pull
-	git submodule update --recursive
+update:
+	pull
 	git commit -am "updated all submodules"
 	git push
-
