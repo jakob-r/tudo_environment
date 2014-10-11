@@ -1,7 +1,7 @@
 tudo_environment
 ===============
 
-all our repositories combined in an unique repository wiht single makefile
+All our Github repositories combined in a collection repository with a single Makefile.
 
 install
 -------
@@ -16,6 +16,8 @@ make commands
 All `make` commands will call `checkout -- .` on each submodule and in the main git.
 This means: **All `make` commands will discard any uncommited changes**
 
+BB: This sounds scary. I guess one should also say the the submodules are not meant for editing.
+
 ### fetch all newest versions
 ```
 make pull
@@ -25,3 +27,5 @@ make pull
 ```
 make update
 ```
+
+BB: this workflow seems strange. so we need to regularly push stuff upstream? otherwise one does not get the newest version from the collection? souns error prone.
